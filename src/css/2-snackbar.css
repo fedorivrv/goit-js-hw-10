@@ -1,0 +1,19 @@
+.form {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 24px;
+}
+.delay-label {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-around;
+}
+.delay-input {
+  padding: 8px;
+}
