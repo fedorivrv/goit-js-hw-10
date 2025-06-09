@@ -64,6 +64,7 @@ console.log(convertMs(24140000)); // {days: 0, hours: 6 minutes: 42, seconds: 20
 
 startBtn.addEventListener('click', () => {
   startBtn.disabled = true;
+  input.disabled = true;
 
   let interval = setInterval(() => {
     const selected = new Date();
@@ -72,6 +73,7 @@ startBtn.addEventListener('click', () => {
     if (difference <= 0) {
       clearInterval(interval);
       updateTimerDisplay(0);
+      input.disabled = false;
       return;
     }
     updateTimerDisplay(difference);
